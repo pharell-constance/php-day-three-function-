@@ -1,0 +1,17 @@
+<?php
+
+function calculImpot($revenu){
+    if ($revenu >9999 && $revenu < 20000){
+        echo $revenu * 0.10;
+    }   else if ($revenu >20000 && $revenu < 35000){
+        echo $revenu * 0.18;
+    }   else if ($revenu >20000 && $revenu < 35000){
+        echo $revenu * 0.25;
+    }   else if ($revenu > 50000){
+        echo $revenu * 0.35;
+    }   else {
+        echo "0 %";
+    }
+}
+
+calculImpot(7000);
